@@ -65,12 +65,12 @@ class FileHelper:
     """
 
     @staticmethod
-    def emails(path_user_emails) -> set:
+    def emails(path_user_emails: str) -> set:
         with open(path_user_emails) as f:
             return {line.rstrip() for line in f}
 
     @staticmethod
-    def message(path_message) -> str:
+    def message(path_message: str) -> str:
         with open(path_message) as f:
             return f.read()
 
@@ -116,7 +116,7 @@ class CustomArgumentParser(ArgumentParser):
                                      help='When set to "True" or "1" (without quotes) it will mock sending message '
                                           'to the users but will still retrieve their data via Slack\'s API')
 
-    def error(self, message):
+    def error(self, message: str):
         """
         Overrides default behaviour of displaying only error when one is encountered - this will also display full help
         @param message: string which describes error that has occured
