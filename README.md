@@ -36,10 +36,11 @@ Provides possibility of messaging multiple Slack users at the same time while "p
 ### Usage
 - Enter the directory you have extracted/cloned this application into
 - Edit `message_slack_users.emails` and `message_slack_users.message` (See: `Getting more help` for more details)
-- Run `python3 message_slack_users -t YOUR_AUTH_TOKEN_HERE`
+- Run `python3 message_slack_users.py -t YOUR_AUTH_TOKEN_HERE`
   
     
     
 ### Getting more help
 - Run `python3 message_slack_users.py` - running without parameters will display inbuilt help message
-- Contact: Michał Kujawski on Toptal Core
+- Contact: `Michał Kujawski` on Toptal Core
+- Formatting messages on Slack: https://api.slack.com/reference/surfaces/formatting
